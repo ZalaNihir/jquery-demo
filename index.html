@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container pt-5">
+        <div id="success">
+            <span class="text-white">Form-submitted.</span>
+        </div>
+        <div class="mt-3" id="formDiv">
+            <form id="form1" name="form1" method="post" action="/action.html">
+                <div class="form-group mb-3">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" class="form-control">
+                    <span class="text-danger" id="nameErr"></span>
+                </div>
+                <div class="form-group mb-3">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" class="form-control">
+                    <span class="text-danger" id="emailErr"></span>
+                </div>
+                <div class="form-group mb-3">
+                    <label for="password">Password</label>
+                    <input type="text" name="password" id="password" class="form-control">
+                    <span class="text-danger" id="passwordErr"></span>
+                </div>
+                <div class="form-group mb-3">
+                    <label for="city">City</label>
+                    <select name="city" id="city" class="form-control">
+                        <option value="" selected disabled>select city</option>
+                        <option value="rajkot">Rajkot</option>
+                        <option value="morbi">Morbi</option>
+                        <option value="Jamanagar">Jamanagar</option>
+                    </select>
+                    <span class="text-danger" id="cityErr"></span>
+                </div>
+                <div class="form-group mb-3">
+                    <label for="phone">Phone</label>
+                    <input type="number" name="phone" id="phone"  class="form-control">
+                    <span class="text-danger" id="phoneErr"></span>
+                </div>
+                <div class="form-group mb-3">
+                    <label for="radio1">Val 1</label>
+                    <input type="radio" name="radio1" id="radio1" value="1">
+                    <br>
+                    <label for="radio2">Val 2</label>
+                    <input type="radio" name="radio1" id="radio2" value="2">
+                    <span class="text-danger" id="phoneErr"></span>
+                </div>
+                <div class="form-group mb-3">
+                    <button class="btn btn-sm btn-primary float-end" id="submit" type="submit">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
